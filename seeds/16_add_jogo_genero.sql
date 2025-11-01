@@ -35,7 +35,7 @@ BEGIN
   SELECT 1 FROM dual;
 
   COMMIT;
-  DBMS_OUTPUT.PUT_LINE('Tabela JOGO_GENERO (ligação) populada com sucesso.');
+  DBMS_OUTPUT.PUT_LINE('Tabela JOGO_GENERO populada com sucesso.');
 EXCEPTION
   WHEN OTHERS THEN
     DBMS_OUTPUT.PUT_LINE('Erro ao popular tabela JOGO_GENERO: ' || SQLERRM);
