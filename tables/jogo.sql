@@ -5,8 +5,6 @@ CREATE TABLE JOGO (
   data_cad
     DATE
     DEFAULT SYSDATE,
-  tipo
-    VARCHAR2(50 CHAR),
   tamanho
     NUMBER(7, 2),
   requisitos

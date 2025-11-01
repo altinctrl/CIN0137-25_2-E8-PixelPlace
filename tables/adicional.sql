@@ -12,5 +12,5 @@ CREATE TABLE ADICIONAL (
     FOREIGN KEY (pk_fk_id_prod)
     REFERENCES PRODUTO (pk_id_prod),
   CONSTRAINT chk_tipo_adicional
-    CHECK (tipo_ad IN ('EXPANSAO', 'MICROTRANSACAO'))
+    CHECK (tipo_ad IN ('EXPANSAO', 'MICROTRANSACAO', 'ASSINATURA'))
 );
