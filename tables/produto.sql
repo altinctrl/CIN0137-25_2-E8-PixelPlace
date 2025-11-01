@@ -23,5 +23,5 @@ CREATE TABLE PRODUTO (
     FOREIGN KEY (fk_publicadora)
     REFERENCES PUBLICADORA (pk_id_pub),
   CONSTRAINT chk_tipo_produto
-    CHECK (tipo_prod IN ('JOGO', 'ADICIONAL', 'ASSINATURA'))
+    CHECK (tipo_prod IN ('JOGO', 'ADICIONAL'))
 );

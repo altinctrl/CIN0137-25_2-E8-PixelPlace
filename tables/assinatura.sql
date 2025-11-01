@@ -8,9 +8,9 @@ CREATE TABLE ASSINATURA (
   
   CONSTRAINT pk_assinatura
     PRIMARY KEY (pk_fk_id_prod),
-  CONSTRAINT fk_assinatura_produto
+  CONSTRAINT fk_assinatura_adicional
     FOREIGN KEY (pk_fk_id_prod)
-    REFERENCES PRODUTO (pk_id_prod),
+    REFERENCES ADICIONAL (pk_fk_id_prod),
   CONSTRAINT chk_duracao_assinatura
     CHECK (duracao > 0)
 );
