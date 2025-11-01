@@ -1,0 +1,31 @@
+CREATE SEQUENCE seq_plataforma
+    START WITH 1
+    INCREMENT BY 1;
+
+CREATE SEQUENCE seq_usuario
+    START WITH 1
+    INCREMENT BY 1;
+
+CREATE SEQUENCE seq_publicadora
+    START WITH 1
+    INCREMENT BY 1;
+
+CREATE SEQUENCE seq_produto
+    START WITH 1
+    INCREMENT BY 1;
+
+CREATE SEQUENCE seq_promocao
+    START WITH 1
+    INCREMENT BY 1;
+
+CREATE SEQUENCE seq_pedido
+    START WITH 1
+    INCREMENT BY 1;
+
+CREATE SEQUENCE seq_sessao_jogo
+    START WITH 1
+    INCREMENT BY 1;
+
+CREATE SEQUENCE seq_conquistas
+    START WITH 1
+    INCREMENT BY 1;
