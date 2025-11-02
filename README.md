@@ -31,4 +31,5 @@ Este projeto é compatível com qualquer ambiente Oracle SQL (incluindo o Oracle
         * `migrations/v001__primeira_implantacao.sql`
 
 2.  **Povoar o Banco:**
-    * Execute os scripts da pasta `/seeds` **exatamente na ordem numérica** (de `01_` a `20_`). A ordem é crucial para que as chaves estrangeiras sejam resolvidas corretamente.
+    * Execute o script concatenado para povoar todas as tabelas:
+        * `seeds/_all_seeds.sql`.
