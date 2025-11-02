@@ -31,5 +31,6 @@ Este projeto é compatível com qualquer ambiente Oracle SQL (incluindo o Oracle
         * `migrations/v001__primeira_implantacao.sql`
 
 2.  **Povoar o Banco:**
-    * Execute o script concatenado para povoar todas as tabelas:
-        * `seeds/_all_seeds.sql`.
+    * Execute os dois scripts de povoamento concatenados em ordem para povoar todas as tabelas:
+        * `seeds/_01_all_seeds.sql`.
+        * `seeds/_02_all_seeds.sql`.
