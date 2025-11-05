@@ -17,6 +17,8 @@ O projeto utiliza uma abordagem híbrida para gerenciamento do banco de dados, c
     * Contém os scripts de migração de schema. O arquivo `v001__primeira_implantacao.sql` é o script inicial que cria toda a estrutura do banco de dados (todas as tabelas e sequences).
 * `/seeds`
     * Contém todos os scripts de povoamento. Cada script é numerado na ordem correta de execução para respeitar as chaves estrangeiras, populando o banco com dados de teste realistas.
+* `/pl_scripts`
+    * Contém scripts PL/SQL auxiliares para teste e validação da lógica do banco de dados.
 * `/tables`
     * Contém a definição declarativa (o "estado final" desejado) de cada tabela em um arquivo `.sql` separado. Serve como uma referência de arquitetura fácil de consultar.
 * `/sequences`
@@ -34,3 +36,12 @@ Este projeto é compatível com qualquer ambiente Oracle SQL (incluindo o Oracle
     * Execute os dois scripts de povoamento concatenados em ordem para povoar todas as tabelas:
         * `seeds/_01_all_seeds.sql`.
         * `seeds/_02_all_seeds.sql`.
+
+3.  **Adicionar Lógica PL/SQL:**
+    * Execute a migração que cria os Packages e Triggers:
+        * `migrations/v002__logica_plsql.sql`
+
+4.  **Testar a Aplicação:**
+    * Execute o script de teste para validar se toda a lógica está funcionando conforme o esperado:
+        * `pl_scripts/teste_logica.sql`
+
